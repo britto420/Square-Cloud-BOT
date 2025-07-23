@@ -99,17 +99,28 @@ cp .env.example .env
 
 Edite o arquivo `.env` com suas credenciais:
 ```env
-DISCORD_TOKEN=seu_token_discord
-CLIENT_ID=seu_client_id
-SQUARECLOUD_API_KEY=sua_api_key_square_cloud
-MERCADO_PAGO_ACCESS_TOKEN=seu_access_token_mp
-ADMIN_ROLE_ID=id_da_role_admin
+# Discord Bot Configuration
+DISCORD_TOKEN=YOUR_DISCORD_BOT_TOKEN # Token do bot do Discord
+CLIENT_ID=YOUR_BOT_CLIENT_ID # ID do cliente do bot
+GUILD_ID=YOUR_SERVER_GUILD_ID # ID do servidor onde o bot opera
 
-# Canais de Logs
-SC_ACTIONS_LOGS=1395841242901778532     # Ações dos usuários
-SC_ADMIN_LOGS=1395862949813555220       # Ações administrativas  
-SC_PAYMENTS_LOGS=1395862976581337189    # Pagamentos processados
-SC_DEPLOY_LOGS=1395863003110313994      # Deploys realizados
+# Square Cloud API
+SQUARECLOUD_API_KEY=YOUR_SQUARECLOUD_API_KEY # Chave da API do Square Cloud
+
+# Mercado Pago Integration
+MERCADO_PAGO_ACCESS_TOKEN=YOUR_MERCADO_PAGO_ACCESS_TOKEN # Token de acesso do Mercado Pago
+
+# Admin Configuration
+ADMIN_ROLE_ID=YOUR_ADMIN_ROLE_ID
+
+# Optional: Webhook URL for payment notifications
+WEBHOOK_URL=https://your-webhook-url.com/payments # Se não for usar, o sistema de polling vai funcionar normalmente.
+
+# Log Channels Configuration
+SC_ACTIONS_LOGS=YOUR_ACTIONS_LOG_CHANNEL_ID    # Ações dos usuários
+SC_ADMIN_LOGS=YOUR_ADMIN_LOG_CHANNEL_ID       # Ações administrativas  
+SC_PAYMENTS_LOGS=YOUR_PAYMENTS_LOG_CHANNEL_ID    # Pagamentos processados
+SC_DEPLOY_LOGS=YOUR_DEPLOY_LOG_CHANNEL_ID      # Deploys realizados
 ```
 
 ### 4. Executar o Bot
