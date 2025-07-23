@@ -1,0 +1,27 @@
+{
+  "paymentSettings": {
+    "basicPrice": 15,
+    "standardPrice": 25,
+    "premiumPrice": 50,
+    "pixEnabled": true,
+    "autoDeployEnabled": true
+  },
+  "systemSettings": {
+    "maxFileSize": 100,
+    "allowedExtensions": [
+      ".zip"
+    ],
+    "deployTimeout": 300,
+    "paymentTimeout": 300
+  },
+  "notifications": {
+    "adminNotifications": true,
+    "paymentNotifications": true
+  },
+  "logChannels": {
+    "actions": "1395841242901778532",
+    "admin": "1395862949813555220",
+    "payments": "1395862976581337189",
+    "deploys": "1395863003110313994"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "squarecloud-discord-bot",
+  "version": "1.0.0",
+  "description": "Bot oficial para gerenciamento de aplicações na Square Cloud",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "squarecloud",
+    "hosting",
+    "deployment"
+  ],
+  "author": "Square Cloud Community",
+  "license": "MIT",
+  "dependencies": {
+    "@squarecloud/api": "^3.7.8",
+    "axios": "^1.6.2",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "mercadopago": "^2.0.0",
+    "winston": "^3.11.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
