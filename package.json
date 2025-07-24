@@ -15,7 +15,7 @@
     "hosting",
     "deployment"
   ],
-  "author": "Square Cloud Community",
+  "author": "britto420",
   "license": "MIT",
   "dependencies": {
     "@squarecloud/api": "^3.7.8",
